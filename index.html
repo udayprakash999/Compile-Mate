@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cd-edtr.css" class="css">
+    <title>Code Editor</title>
+    <script src="https://kit.fontawesome.com/1c91ed02a9.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="compiler.png" type="image/x-icon">
+
+</head>
+<body>
+     
+  <div class="logo">
+    <h1>CompileMate <img src="compiler.png" width="50px" ></h1>
+  </div>
+
+  <div class="container">
+    <div class="left">
+        <div class="btn-panel">
+            <button class="tablink" onclick="openPanel('html-panel', this)" id="defaultOpen">HTML</button>
+            <button class="tablink" onclick="openPanel('css-panel', this )">CSS</button>
+            <button class="tablink" onclick="openPanel('js-panel', this)">JavaScript</button>
+          </div>
+
+        <div  id="html-panel" class="tabcontent">
+            <textarea id="htmlCode"></textarea>
+        </div>
+        
+
+        <div id="css-panel" class="tabcontent">    
+            <textarea id="cssCode"></textarea>
+        </div>
+        
+        <div id="js-panel" class="tabcontent">
+            <textarea id="jsCode"></textarea>
+        </div>
+
+    </div>
+
+    <div class="right">
+        <div class="btn-panel">
+            <button class="tablink" id="output-btn">Output</button>
+            </div>
+      <label for="output"><i class="fas fa-play"></i></label>
+      <iframe id="output"></iframe>
+    </div>
+  </div>
+ <footer>
+      <ul>
+        <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+        <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
+      </ul>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
